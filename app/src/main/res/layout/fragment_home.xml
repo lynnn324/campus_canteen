@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============ res/layout/fragment_home.xml（首页布局）============
+  从上到下分四块（仿外卖 App）：
+   1. 顶部：搜索框
+   2. Banner：ViewPager2 轮播
+   3. 分类入口：横向一排 4 个（早餐/套餐/轻食/饮品）
+   4. 档口列表：RecyclerView + 空态占位文字
+  整页外层用 NestedScrollView 包住：这样向上滑动时，搜索框/Banner/分类入口
+  会跟着一起滚走，档口列表就能占满全屏（而不是被固定头部挤成半屏）。
+  注意：内层 RecyclerView 关闭自身滚动（nestedScrollingEnabled=false），
+        统一交给外层 NestedScrollView 滚动，避免两层滚动打架。
+-->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ① 顶部搜索框 -->
+        <!-- minHeight=48dp：Android 建议的最小点击区域，Lint 唯一红色错误就是它 -->
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:minHeight="48dp"
+            android:background="@drawable/bg_search_box"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:hint="@string/home_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="@color/text_gray_dark"
+            android:maxLines="1" />
+
+        <!-- ① 双模切换：外卖 / 自取（默认选中"自取"） -->
+        <RadioGroup
+            android:id="@+id/rg_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_dinein">
+
+            <RadioButton
+                android:id="@+id/rb_dinein"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/mode_dinein"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <RadioButton
+                android:id="@+id/rb_takeout"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/mode_takeout"
+                android:textColor="?android:attr/textColorPrimary" />
+        </RadioGroup>
+
+        <!-- ② Banner 轮播 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager_banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginHorizontal="12dp" />
+
+        <!-- ③ 分类入口（横向一排） -->
+        <LinearLayout
+            android:id="@+id/ll_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <LinearLayout style="@style/ItemCategory"
+                android:id="@+id/ll_cat_breakfast"
+                android:layout_width="0dp" android:layout_weight="1">
+                <!-- importantForAccessibility="no"：图标是装饰，下面已有"早餐"文字说明，朗读器不再重复 -->
+                <ImageView android:id="@+id/img_cat_breakfast"
+                    style="@style/IconCategory"
+                    android:background="@drawable/bg_category_circle"
+                    android:src="@drawable/ic_breakfast"
+                    android:importantForAccessibility="no" />
+                <TextView style="@style/TextCategory" android:text="@string/cat_breakfast" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ItemCategory"
+                android:id="@+id/ll_cat_meal"
+                android:layout_width="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/img_cat_meal"
+                    style="@style/IconCategory"
+                    android:background="@drawable/bg_category_circle"
+                    android:src="@drawable/ic_meal"
+                    android:importantForAccessibility="no" />
+                <TextView style="@style/TextCategory" android:text="@string/cat_meal" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ItemCategory"
+                android:id="@+id/ll_cat_light"
+                android:layout_width="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/img_cat_light"
+                    style="@style/IconCategory"
+                    android:background="@drawable/bg_category_circle"
+                    android:src="@drawable/ic_light"
+                    android:importantForAccessibility="no" />
+                <TextView style="@style/TextCategory" android:text="@string/cat_light" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ItemCategory"
+                android:id="@+id/ll_cat_drink"
+                android:layout_width="0dp" android:layout_weight="1">
+                <ImageView android:id="@+id/img_cat_drink"
+                    style="@style/IconCategory"
+                    android:background="@drawable/bg_category_circle"
+                    android:src="@drawable/ic_drink"
+                    android:importantForAccessibility="no" />
+                <TextView style="@style/TextCategory" android:text="@string/cat_drink" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ④ 列表标题 + 地图入口（动态显示当前"时空专区"名） -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/tv_stall_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/home_stall_list_title"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 地图入口：点开校园地图，看各食堂位置与实时距离 -->
+            <TextView
+                android:id="@+id/btn_open_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="4dp"
+                android:drawableTint="?attr/colorPrimary"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="@string/map_entry"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- ④ 档口列表 + 空态（FrameLayout 叠放：空态文字 盖 列表；高度自适应，随页面一起滚） -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_stall_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="24dp" />
+
+            <!-- 空态占位：没有档口数据显示此行 -->
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="48dp"
+                android:text="@string/home_stall_empty"
+                android:textColor="?android:attr/textColorSecondary"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

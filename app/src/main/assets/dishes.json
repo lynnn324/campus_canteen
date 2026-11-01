@@ -1,0 +1,58 @@
+{
+  "dishes": [
+    { "dishId": 101, "shopId": 1, "name": "鲜肉包", "type": "主食", "category": "早餐", "price": 2.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "现包现蒸，皮薄馅足，猪肉大葱馅，早餐首选。", "image": "dish_steamed_bun" },
+    { "dishId": 102, "shopId": 1, "name": "南瓜小米粥", "type": "主食", "category": "早餐", "price": 2.5, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "老南瓜配小米慢熬，自然清甜，暖胃不腻。", "image": "dish_pumpkin_congee" },
+    { "dishId": 103, "shopId": 1, "name": "茶叶蛋", "type": "菜", "category": "早餐", "price": 1.5, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "卤汁浸煮一夜，茶香入味，咸淡刚好。", "image": "dish_tea_egg" },
+    { "dishId": 104, "shopId": 1, "name": "现磨豆浆", "type": "饮品", "category": "饮品", "price": 2.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "当天现磨，豆香浓，微甜可选，配油条正好。", "image": "dish_soy_milk" },
+    { "dishId": 105, "shopId": 1, "name": "现炸小油条", "type": "菜", "category": "早餐", "price": 2.0, "smallPortionWarn": true, "canTakeout": true, "canDineIn": true, "desc": "现炸金黄，外脆里软，趁热吃最香。", "image": "dish_you_tiao" },
+
+    { "dishId": 201, "shopId": 2, "name": "鱼香肉丝饭", "type": "主食", "category": "套餐", "price": 14.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "酸甜微辣，肉丝配木耳笋丝，下饭不腻。", "image": "dish_yuxiang_rice" },
+    { "dishId": 202, "shopId": 2, "name": "宫保鸡丁饭", "type": "主食", "category": "套餐", "price": 15.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "label": "招牌必点", "desc": "鸡丁滑嫩、花生香脆，糊辣荔枝口，微辣下饭。", "image": "dish_gongbao_rice" },
+    { "dishId": 203, "shopId": 2, "name": "西红柿鸡蛋面", "type": "主食", "category": "套餐", "price": 13.0, "smallPortionWarn": true, "canTakeout": false, "canDineIn": true, "desc": "番茄熬出沙，鸡蛋嫩滑，汤头酸甜开胃。", "image": "dish_tomato_noodle" },
+    { "dishId": 204, "shopId": 2, "name": "酸辣土豆丝", "type": "菜", "category": "套餐", "price": 8.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "脆爽土豆丝，醋酸辣香，解腻小菜。", "image": "dish_spicy_potato" },
+    { "dishId": 205, "shopId": 2, "name": "例汤", "type": "菜", "category": "套餐", "price": 0.5, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "当日时令例汤，清淡少盐，配饭刚好。", "image": "dish_li_tang" },
+
+    { "dishId": 301, "shopId": 3, "name": "清蒸鸡腿饭", "type": "主食", "category": "套餐", "price": 15.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "鸡腿清蒸少油，肉嫩多汁，配米饭和时蔬。", "image": "dish_qingzheng_jitui_rice" },
+    { "dishId": 302, "shopId": 3, "name": "白灼时蔬", "type": "菜", "category": "轻食", "price": 6.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "时令青菜白灼，少油少盐，保留原味。", "image": "dish_baizhuo_shishu" },
+    { "dishId": 303, "shopId": 3, "name": "蒸蛋羹", "type": "菜", "category": "套餐", "price": 5.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "鸡蛋羹滑嫩如布丁，淋少许生抽，好消化。", "image": "dish_zheng_dangeng" },
+    { "dishId": 304, "shopId": 3, "name": "冬瓜排骨汤", "type": "菜", "category": "套餐", "price": 6.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "冬瓜清甜、排骨软烂，汤清不油腻。", "image": "dish_donggua_paigu_tang" },
+    { "dishId": 305, "shopId": 3, "name": "杂粮饭", "type": "主食", "category": "套餐", "price": 2.0, "smallPortionWarn": true, "canTakeout": true, "canDineIn": true, "desc": "糙米配燕麦玉米碴，粗粮饱腹，升糖更慢。", "image": "dish_zaliang_rice" },
+
+    { "dishId": 401, "shopId": 4, "name": "麻婆豆腐饭", "type": "主食", "category": "套餐", "price": 13.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "嫩豆腐配牛肉末，麻辣鲜香，拌饭一绝。", "image": "dish_mapo_tofu_rice" },
+    { "dishId": 402, "shopId": 4, "name": "回锅肉盖饭", "type": "主食", "category": "套餐", "price": 16.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "label": "招牌必点", "desc": "五花肉煸出灯盏窝，豆瓣酱香，咸香下饭。", "image": "dish_huiguorou_rice" },
+    { "dishId": 403, "shopId": 4, "name": "干锅花菜", "type": "菜", "category": "套餐", "price": 12.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "花菜干香微辣，配五花肉片，越嚼越香。", "image": "dish_ganguo_huacai" },
+    { "dishId": 404, "shopId": 4, "name": "红糖冰粉", "type": "饮品", "category": "饮品", "price": 4.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "手搓冰粉配红糖水，冰凉爽滑，解辣解腻。", "image": "dish_hongtang_bingfen" },
+    { "dishId": 405, "shopId": 4, "name": "米饭(小碗)", "type": "主食", "category": "套餐", "price": 1.5, "smallPortionWarn": true, "canTakeout": false, "canDineIn": true, "desc": "东北大米现焖，米粒饱满，小份不浪费。", "image": "dish_rice" },
+    { "dishId": 406, "shopId": 4, "name": "米饭(大碗)", "type": "主食", "category": "套餐", "price": 3.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "东北大米现焖，分量足，配盖饭刚好。", "image": "dish_da_wan_rice" },
+
+    { "dishId": 501, "shopId": 5, "name": "皮蛋瘦肉粥", "type": "主食", "category": "早餐", "price": 4.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "米粒熬开花，皮蛋瘦肉咸香，早餐暖胃。", "image": "dish_pidan_shourou_zhou" },
+    { "dishId": 502, "shopId": 5, "name": "手抓饼", "type": "主食", "category": "早餐", "price": 3.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "现煎起酥，外脆内软，可加蛋加肠。", "image": "dish_shouzhua_bing" },
+    { "dishId": 503, "shopId": 5, "name": "鲜肉馄饨", "type": "主食", "category": "早餐", "price": 5.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "薄皮包鲜肉馅，汤里撒紫菜虾皮，鲜得很。", "image": "dish_xianrou_huntun" },
+    { "dishId": 504, "shopId": 5, "name": "卤蛋", "type": "菜", "category": "早餐", "price": 1.5, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "老卤慢煮，蛋白弹、蛋黄沙，咸香入味。", "image": "dish_lu_dan" },
+    { "dishId": 505, "shopId": 5, "name": "现磨黑豆浆", "type": "饮品", "category": "饮品", "price": 2.5, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "黑豆现磨，豆香更浓，不加糖也有回甘。", "image": "dish_hei_doujiang" },
+
+    { "dishId": 601, "shopId": 6, "name": "黑椒鸡扒饭", "type": "主食", "category": "套餐", "price": 16.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "label": "招牌必点", "desc": "鸡腿扒煎至焦香，黑椒汁浓郁，配一只溏心蛋。", "image": "dish_heijiao_jipa_rice" },
+    { "dishId": 602, "shopId": 6, "name": "咖喱牛腩饭", "type": "主食", "category": "套餐", "price": 18.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "牛腩炖到软烂，咖喱微辣带椰香，拌饭很香。", "image": "dish_gali_niunan_rice" },
+    { "dishId": 603, "shopId": 6, "name": "蒜香排骨饭", "type": "主食", "category": "套餐", "price": 17.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "排骨腌足蒜香，外酥里嫩，咸鲜带甜。", "image": "dish_suanxiang_paigu_rice" },
+    { "dishId": 604, "shopId": 6, "name": "清炒时蔬", "type": "菜", "category": "套餐", "price": 7.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "当日绿叶菜大火快炒，脆嫩不出水。", "image": "dish_qingchao_shishu" },
+    { "dishId": 605, "shopId": 6, "name": "柠檬茶", "type": "饮品", "category": "饮品", "price": 5.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "鲜柠檬手打，茶底清爽，微酸解腻。", "image": "dish_ningmeng_cha" },
+
+    { "dishId": 701, "shopId": 7, "name": "鸡胸肉沙拉", "type": "轻食", "category": "轻食", "price": 18.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "label": "轻食人气王", "desc": "低温煎鸡胸，配生菜、圣女果和油醋汁，高蛋白低脂。", "image": "dish_chicken_salad" },
+    { "dishId": 702, "shopId": 7, "name": "牛油果全麦三明治", "type": "主食", "category": "轻食", "price": 16.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "全麦面包夹牛油果、鸡蛋和鸡胸，饱腹不油腻。", "image": "dish_avocado_sandwich" },
+    { "dishId": 703, "shopId": 7, "name": "蔬菜水果能量碗", "type": "轻食", "category": "轻食", "price": 17.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "时蔬、玉米、紫甘蓝配当季水果，一碗管饱。", "image": "dish_energy_bowl" },
+    { "dishId": 704, "shopId": 7, "name": "烤南瓜", "type": "菜", "category": "轻食", "price": 7.0, "smallPortionWarn": true, "canTakeout": true, "canDineIn": true, "desc": "贝贝南瓜烤到焦糖化，粉糯香甜，用油很少。", "image": "dish_roast_pumpkin" },
+    { "dishId": 705, "shopId": 7, "name": "无糖燕麦奶", "type": "饮品", "category": "饮品", "price": 9.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "燕麦现磨，无糖配方，乳糖不耐也能喝。", "image": "dish_oat_milk" },
+
+    { "dishId": 801, "shopId": 8, "name": "藤椒鸡丝荞麦面", "type": "主食", "category": "轻食", "price": 15.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "荞麦面配手撕鸡丝，藤椒清香微麻，爽口不腻。", "image": "dish_tengjiao_qiaomai_mian" },
+    { "dishId": 802, "shopId": 8, "name": "蟹粉豆腐", "type": "菜", "category": "套餐", "price": 22.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "label": "招牌必点", "desc": "嫩豆腐配蟹粉蟹黄，鲜香浓郁，趁热拌饭。", "image": "dish_xiefen_doufu" },
+    { "dishId": 803, "shopId": 8, "name": "龙井虾仁", "type": "菜", "category": "套餐", "price": 28.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "虾仁弹嫩，龙井茶香清雅，清淡不寡。", "image": "dish_longjing_xiaren" },
+    { "dishId": 804, "shopId": 8, "name": "桂花米糕", "type": "主食", "category": "早餐", "price": 6.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "米糕松软，桂花蜜清香，微甜不腻。", "image": "dish_guihua_migao" },
+    { "dishId": 805, "shopId": 8, "name": "酸梅汤", "type": "饮品", "category": "饮品", "price": 5.0, "smallPortionWarn": false, "canTakeout": false, "canDineIn": true, "desc": "乌梅山楂熬煮，冰镇后酸甜生津，解腻。", "image": "dish_suanmei_tang" },
+
+    { "dishId": 901, "shopId": 9, "name": "精品套餐(两荤两素)", "type": "主食", "category": "套餐", "price": 20.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "label": "招牌必点", "desc": "两荤两素自选，配米饭和例汤，营养均衡。", "image": "dish_jingpin_taocan" },
+    { "dishId": 902, "shopId": 9, "name": "养生药膳汤", "type": "菜", "category": "套餐", "price": 8.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "党参黄芪配鸡肉慢炖，汤色清亮，温补不燥。", "image": "dish_yaoshan_tang" },
+    { "dishId": 903, "shopId": 9, "name": "手作酸奶", "type": "饮品", "category": "饮品", "price": 6.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "当天发酵，质地浓稠，配果粒，无香精。", "image": "dish_shouzuo_suannai" },
+    { "dishId": 904, "shopId": 9, "name": "全麦鸡胸卷", "type": "主食", "category": "轻食", "price": 15.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "全麦饼皮卷鸡胸、生菜和胡萝卜，便携轻食。", "image": "dish_quanmai_jixiong_juan" },
+    { "dishId": 905, "shopId": 9, "name": "美式咖啡", "type": "饮品", "category": "饮品", "price": 10.0, "smallPortionWarn": false, "canTakeout": true, "canDineIn": true, "desc": "现萃美式，豆香醇厚，微苦回甘，提神。", "image": "dish_meishi_kafei" }
+  ]
+}

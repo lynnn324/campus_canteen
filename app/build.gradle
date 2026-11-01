@@ -1,0 +1,48 @@
+// ============ app/build.gradle（应用模块级）============
+// 作用：声明 UI 版本信息 + 唯一的依赖清单（官方 AndroidX + 高德地图/搜索，无其他第三方库）
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    // 包命名空间：跟 applicationId 保持一致，资源 R 类归到该包
+    namespace 'com.my.campus_canteen'
+    // 编译用的 SDK 版本
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.my.campus_canteen"
+        minSdk 24          // 最低支持 Android 7.0
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            // 骨架阶段不开启混淆，方便调试
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        // 用 Java 8 语法特性（lambda 等），兼容性最好
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // 官方 Google AndroidX / Material 库 + 高德 SDK，无其他第三方依赖 ------------------------
+    implementation 'androidx.appcompat:appcompat:1.6.1'            // Activity 基础兼容
+    implementation 'com.google.android.material:material:1.11.0'   // 底部导航栏 + Material3(后续特色⑤)
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // 约束布局
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'      // 档口列表 RecyclerView
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'          // 首页 Banner 轮播
+    // 高德地图 SDK（3D 地图 + 瓦片渲染），仅用于「校园地图」页
+    // 用 9.7.0：它是少数同时带 x86_64 原生库的版本，可在 x86_64 模拟器上正常渲染
+    implementation 'com.amap.api:3dmap:9.7.0'
+    // 高德搜索 SDK：用定位在周边真实搜出"食堂""教学楼"，地图与距离都来自真实 POI
+    implementation 'com.amap.api:search:9.7.0'
+}

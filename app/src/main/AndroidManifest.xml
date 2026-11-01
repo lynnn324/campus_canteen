@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.CampusCanteen">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5fd22045ce07a83de5dbb2b8b3d28755" />
+
+        <!-- 高德定位 SDK 必需：缺了这个 service，定位会报 code=10 启动失败 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.shop.StallDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.shop.DishDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.category.CategoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.order.CheckoutActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.order.OrderDetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.mine.FavoritesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.map.MapActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.mine.SettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.mine.LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.mine.RegisterActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- 分类入口：纵向排列（图标在上、文字在下） -->
+    <style name="ItemCategory">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingVertical">6dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 分类图标 -->
+    <style name="IconCategory">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- 分类文字 -->
+    <style name="TextCategory">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+</resources>

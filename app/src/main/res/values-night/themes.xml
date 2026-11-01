@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============ res/values-night/themes.xml（夜间主题）============
+  注意：同名 style 在 values-night 里是"整份替换"，不会和 values 合并，
+       所以这里必须把 values/themes.xml 里的每一项都重新写一遍，
+       只把需要夜间变化的项改掉（底色、文字、表面色、状态栏图标）。
+-->
+<resources>
+    <style name="Theme.CampusCanteen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 主色三档：色值本身不变，具体深浅由 values-night/colors.xml 覆盖 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorPrimaryLight">@color/primary_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+
+        <!-- 夜间：页面底色转深墨绿黑，文字转浅色 -->
+        <item name="android:colorBackground">@color/bg_page</item>
+        <item name="android:textColorPrimary">@color/text_main</item>
+        <item name="android:textColorSecondary">@color/text_gray</item>
+        <item name="colorSurface">@color/surface</item>
+
+        <!-- 状态栏跟页面同色；夜间底色是深的，图标必须切成浅色 -->
+        <item name="android:statusBarColor">@color/bg_page</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,26 @@
+# Gradle / 构建产物
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio
+.idea/
+*.iml
+
+# 本机路径配置（含 SDK 路径，不能提交）
+local.properties
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 课程报告、说明文档等文字材料不随项目上传
+*.md
+*.docx
+*.doc
+*.pdf
+项目模块结构.png
+项目模块结构.svg

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============ res/drawable/bg_category_circle.xml（分类入口圆形底）============ -->
+<!-- 用"形状"画一个橙色圆形，作为分类图标的暖色底，复用给四个分类。 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="?attr/colorPrimaryLight" />
+</shape>

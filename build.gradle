@@ -1,0 +1,6 @@
+// ============ build.gradle（根目录，项目级）============
+// 作用：只声明全局插件版本，具体每个模块再用，一处定版本。
+plugins {
+    // Android 官方应用插件，版本统一在这里声明
+    id 'com.android.application' version '8.2.0' apply false
+}

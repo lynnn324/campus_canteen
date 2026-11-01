@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============ res/drawable/bg_circle.xml（时间轴圆点）============
+  白色实心圆 + 浅灰描边。代码里用 setBackgroundTintList 把圆点染成
+  状态色（待出餐橙/配送中青/已完成绿），没走到的就保持白灰。
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="?attr/colorSurface" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/divider" />
+</shape>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============ res/drawable/ic_launcher.xml（应用图标-矢量）============
+  用一个"橙色圆底 + 白色碗"模拟食堂主题图标。
+  说明：骨架阶段先用它顶替启动图标；若想要桌面圆角自适应图标，
+  可在 Android Studio 里 File>New>Image Asset 生成 mipmap 系列，再改回 @mipmap/ic_launcher。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 薄荷青绿圆底（与主题 primary 同色系） -->
+    <path
+        android:fillColor="#45B29D"
+        android:pathData="M54,4a50,50 0 1,0 0.001,0z" />
+    <!-- 白色碗身 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,54a20,16 0 1,0 40,0z" />
+    <!-- 碗口（浅薄荷） -->
+    <path
+        android:fillColor="#CBE9E2"
+        android:pathData="M34,54a20,16 0 1,0 40,0zM37,54a17,13 0 1,1 34,0z" />
+</vector>

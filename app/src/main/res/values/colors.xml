@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- 主色：新鲜薄荷青绿，清透不刺眼 -->
+    <color name="primary">#45B29D</color>
+    <color name="primary_dark">#37998A</color>
+    <color name="primary_light">#CBE9E2</color>
+
+    <!-- 强调色：与主色同族，保持整体清爽 -->
+    <color name="accent">#45B29D</color>
+
+    <!-- 文字 / 背景 -->
+    <color name="text_main">#263238</color>
+    <color name="text_gray">#8AA4A0</color>
+    <color name="text_gray_dark">#546E6A</color> <!-- 深一点的灰：搜索框提示文字用它，对比度才达标 -->
+    <color name="bg_page">#F3F8F6</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- 卡片 / 搜索框 / 悬浮条等"表面"色：单列一个名字，夜间由 values-night 覆盖 -->
+    <color name="surface">#FFFFFF</color>
+    <!-- 分隔线 / 未完成时间轴的浅灰：同样给夜间留了深色版本 -->
+    <color name="divider">#CFD8DC</color>
+
+    <!-- 危险操作（取消订单）的浅红底与红字 -->
+    <color name="danger_bg">#FDE7E7</color>
+    <color name="danger_text">#D9534F</color>
+
+    <!-- 分类图标专用色：比 primary_dark 再深一档，浅绿圆底上对比度达标（≥3:1） -->
+    <color name="icon_teal">#2E7D6E</color>
+
+    <!-- Banner 轮播占位底色：柔和的薄荷渐变感（后续换真实本地图） -->
+    <color name="banner_1">#57B0A2</color>
+    <color name="banner_2">#5DB2A5</color>
+    <color name="banner_3">#63B4A9</color>
+
+    <!-- 底栏选中/未选中 -->
+    <color name="nav_selected">#45B29D</color>
+    <color name="nav_unselected">#A9B8B5</color>
+
+    <!-- Phase 5 订单状态色：不同状态 = 不同底色（卡片）+ 醒目标识色（状态条） -->
+    <color name="status_pending">#F2A33C</color>        <!-- 待出餐：暖橙，像"正在加热" -->
+    <color name="status_delivering">#45B29D</color>     <!-- 配送中：薄荷青绿，和主色同族 -->
+    <color name="status_done">#7CB342</color>           <!-- 已完成：草绿，像"交易完成" -->
+    <color name="status_cancel">#9E9E9E</color>         <!-- 已取消：灰，像"退票作废" -->
+
+    <!-- 订单卡片浅色底色（同色系淡版，不刺眼） -->
+    <color name="status_pending_bg">#FFF3E0</color>
+    <color name="status_delivering_bg">#E0F2F1</color>
+    <color name="status_done_bg">#F1F8E9</color>
+    <color name="status_cancel_bg">#ECEFF1</color>
+
+    <!-- 时间轴线条：未走过的用浅灰 -->
+    <color name="timeline_inactive">#CFD8DC</color>
+</resources>

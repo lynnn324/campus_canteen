@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============ res/values/themes.xml（应用主题）============
+  用 MaterialComponents 的 .NoActionBar 主题：没有默认标题栏，方便我们自己控布局。
+  颜色策略：所有颜色都收敛到"主题属性"这一层，
+           布局里只写 ?attr/xxx 或 ?android:attr/xxx，不再写死 @color/xxx，
+           这样换主题色时整站颜色会一起变。
+-->
+<resources>
+    <style name="Theme.CampusCanteen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 主色三档：主 / 深 / 浅 -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorPrimaryLight">@color/primary_light</item>
+        <!-- 彩色底上的文字、次级强调色 -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent</item>
+
+        <!-- 页面底色 / 主文字 / 灰文字：收敛到系统属性，布局用 ?android:attr/xxx 引用 -->
+        <item name="android:colorBackground">@color/bg_page</item>
+        <item name="android:textColorPrimary">@color/text_main</item>
+        <item name="android:textColorSecondary">@color/text_gray</item>
+        <!-- 卡片、搜索框、弹窗等"表面"色：夜间由 values-night/colors.xml 换成深色 -->
+        <item name="colorSurface">@color/surface</item>
+
+        <!-- 状态栏（顶部显示时间/电量那条）：涂成浅色 + 深色图标，和页面融为清透一体
+             （android:windowLightStatusBar 表示"浅色背景用深色图标"，需 API 23+，最低24没问题） -->
+        <item name="android:statusBarColor">@color/bg_page</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

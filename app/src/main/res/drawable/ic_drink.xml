@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============ res/drawable/ic_drink.xml（分类：饮品-杯图标）============ -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@color/icon_teal">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M7,2h10l-0.5,2h-9L7,2zM6,4l1,15c0.1,1.1 1.02,2 2.12,2h5.77c1.1,0 2.02,-0.9 2.12,-2l1,-15H6zM12,6l0.66,5.5L12,14l-0.66,-2.5L12,6z" />
+</vector>

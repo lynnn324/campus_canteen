@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- 页面底色：深墨绿黑（比纯黑柔和，OLED 也不刺眼） -->
+    <color name="bg_page">#0F1413</color>
+    <!-- 卡片 / 搜索框 / 悬浮条 / 底部面板等"表面"色 -->
+    <color name="surface">#1B211F</color>
+
+    <!-- 文字：整体提亮，保证深底上对比度达标 -->
+    <color name="text_main">#E6EFEC</color>        <!-- 主文字：近白 -->
+    <color name="text_gray">#9AAFA9</color>        <!-- 次级灰：仍要看得清 -->
+    <color name="text_gray_dark">#C6D5D1</color>   <!-- 搜索框提示字：夜间用浅灰 -->
+
+    <!-- 浅主色底（分类圆底 / 头像底 / 悬浮条描边）：夜间换成深青绿 -->
+    <color name="primary_light">#23443D</color>
+    <!-- 主色的"深一档"（订单卡"查看详情"、结算页强调文字）：夜间反而要提亮，
+         否则深底上几乎看不见 -->
+    <color name="primary_dark">#7AD9C4</color>
+    <!-- 分类图标专用色：亮青绿，压在深青绿圆底上对比度才够 -->
+    <color name="icon_teal">#8CD3C2</color>
+
+    <!-- 分隔线 / 时间轴未走过的线：夜间用中灰 -->
+    <color name="divider">#37423F</color>
+    <!-- 未亮的时间轴：既当线也当圆点里的数字，亮一点才能在深色卡片上认出来 -->
+    <color name="timeline_inactive">#7C8D88</color>
+
+    <!-- 底栏未选中图标/文字 -->
+    <color name="nav_unselected">#8FA09B</color>
+
+    <!-- 订单状态卡的底色（把浅粉彩底压暗，浅色文字压上去才清晰） -->
+    <color name="status_pending_bg">#3A2C18</color>
+    <color name="status_delivering_bg">#17332E</color>
+    <color name="status_done_bg">#23301A</color>
+    <color name="status_cancel_bg">#242A2C</color>
+
+    <!-- 取消订单：深红底 + 提亮的红字 -->
+    <color name="danger_bg">#3D2322</color>
+    <color name="danger_text">#F08A85</color>
+</resources>

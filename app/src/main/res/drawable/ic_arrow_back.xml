@@ -1,0 +1,11 @@
+<!-- ============ res/drawable/ic_arrow_back.xml（返回箭头图标）============ -->
+<!-- Material 标准左箭头，24dp 网格；实际颜色由 ImageView 的 tint 按主题决定 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M20,11H7.83l5.59,-5.59L12,4l-8,8 8,8 1.41,-1.41L7.83,13H20v-2z" />
+</vector>

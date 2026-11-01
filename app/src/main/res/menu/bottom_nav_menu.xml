@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============ res/menu/bottom_nav_menu.xml（底部导航菜单项）============
+  决定底栏有哪几个"页签"。这里四个：首页/购物车/订单/我的。
+  每个菜单项：id 给 Java 代码匹配、icon 图标、title 文案。
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/nav_cart" />
+
+    <item
+        android:id="@+id/nav_order"
+        android:icon="@drawable/ic_order"
+        android:title="@string/nav_order" />
+
+    <item
+        android:id="@+id/nav_mine"
+        android:icon="@drawable/ic_mine"
+        android:title="@string/nav_mine" />
+</menu>

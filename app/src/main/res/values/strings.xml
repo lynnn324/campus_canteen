@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============ res/values/strings.xml（所有文案统一放这里，便于改）============ -->
+<resources>
+    <string name="app_name">校园食堂</string>
+
+    <!-- 底部导航四个 Tab 文案 -->
+    <string name="tab_cart">购物车</string>
+    <string name="tab_order">订单</string>
+
+    <!-- 首页各区块标题 -->
+    <string name="home_search_hint">搜索菜品 / 档口</string>
+    <string name="home_stall_list_title">附近档口</string>
+    <string name="home_stall_empty">暂无营业档口</string>
+
+    <!-- 双模切换（外卖/自取） -->
+    <string name="mode_takeout">外卖</string>
+    <string name="mode_dinein">自取</string>
+
+    <!-- 档口详情（透明厨房 + 菜品） -->
+    <string name="kitchen_video_fallback">暂无法预览后厨实况</string>
+    <string name="stall_dish_title">全部菜品</string>
+    <string name="stall_dish_empty">该档口暂无菜品</string>
+
+    <!-- 分类入口标签 -->
+    <string name="cat_breakfast">早餐</string>
+    <string name="cat_meal">套餐</string>
+    <string name="cat_light">轻食</string>
+    <string name="cat_drink">饮品</string>
+
+    <!-- 分类专区页（点首页四入口进来） -->
+    <string name="category_page_title">%1$s专区</string>
+    <string name="category_page_default">分类专区</string>
+    <string name="category_empty">该分类暂无菜品</string>
+    <!-- 仅用作返回按钮的无障碍描述，界面不显示文字 -->
+    <string name="btn_back">返回</string>
+    <!-- 菜品来源：分类页在菜品下方显示它来自哪个食堂 -->
+    <string name="dish_from_shop">来自 %1$s</string>
+
+    <!-- 一单只允许一个食堂：购物车已有别家食堂菜品时弹窗询问 -->
+    <string name="cart_diff_shop_title">一个订单只能选一个食堂</string>
+    <string name="cart_diff_shop_msg">购物车里已有「%1$s」的菜品，本单只支持一个食堂。是否清空并改为「%2$s」？</string>
+    <string name="cart_diff_shop_ok">清空并更换</string>
+    <string name="cart_diff_shop_cancel">保留原单</string>
+
+    <!-- 空壳页文案 -->
+    <string name="cart_placeholder">购物车空荡荡，先去逛一逛</string>
+    <string name="order_placeholder">还没有订单哦</string>
+
+    <!-- ============ Phase 7 "我的"页 ============ -->
+    <string name="mine_nickname">校园吃货</string>
+    <string name="mine_signature">今天想吃点什么？</string>
+    <string name="mine_avatar_desc">头像</string>
+    <string name="mine_stat_order">我的订单</string>
+    <string name="mine_stat_fav">我的收藏</string>
+    <string name="mine_stat_spend">累计消费</string>
+    <string name="mine_spend_value">¥%1$s</string>
+    <string name="mine_my_order">我的订单</string>
+    <string name="mine_my_fav">我的收藏</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_version">校园食堂 v1.0</string>
+    <!-- 列表项右侧的指示箭头 -->
+    <string name="item_arrow">›</string>
+
+    <!-- 收藏（菜品行爱心 + 收藏列表页） -->
+    <string name="fav_toggle">收藏</string>
+    <string name="fav_added">已收藏</string>
+    <string name="fav_removed">已取消收藏</string>
+    <string name="fav_remove">取消收藏</string>
+    <string name="fav_empty">还没有收藏的菜品，去逛逛点个爱心吧</string>
+
+    <!-- 设置页：关于与版本 -->
+    <string name="setting_title">设置</string>
+    <string name="setting_about">关于与版本</string>
+    <string name="about_msg">校园食堂 v%1$s\n\n一款校园食堂档口点餐 Demo。档口与菜品默认使用本地演示数据，开启数据服务器后会自动同步服务器上的最新菜单。</string>
+    <string name="about_ok">知道了</string>
+
+    <!-- 设置页：数据源（服务器同步状态） -->
+    <string name="setting_data_source">数据源</string>
+    <string name="data_source_local">本地演示数据（未连接服务器）</string>
+    <string name="data_source_syncing">正在连接服务器…</string>
+    <string name="data_source_server">服务器 v%1$s · %2$s · %3$s</string>
+    <string name="data_source_fail">同步失败，继续使用本地数据</string>
+
+    <!-- 底部导航内容描述（无障碍用） -->
+    <string name="nav_home">首页</string>
+    <string name="nav_cart">购物车</string>
+    <string name="nav_order">订单</string>
+    <string name="nav_mine">我的</string>
+
+    <!-- Phase 4 购物车 -->
+    <string name="cart_total_default">合计 ¥0.0</string>
+    <string name="cart_total">合计 ¥%1$s</string>
+    <string name="cart_sheet_title">已选菜品</string>
+    <string name="cart_checkout">去结算</string>
+    <string name="cart_checkout_go">去结算 ¥%1$s</string>
+    <string name="cart_item_count">已选 %1$d 件</string>
+    <string name="cart_min_short">还差 ¥%1$s 元起送</string>
+    <!-- 清空购物车（放在购物车页顶部右侧） -->
+    <string name="cart_clear">清空</string>
+    <string name="cart_clear_msg">确定要清空当前购物车吗？清空后不可恢复</string>
+    <string name="cart_clear_ok">清空</string>
+    <string name="cart_clear_cancel">取消</string>
+    <string name="toast_cart_cleared">购物车已清空</string>
+
+    <!-- 加购 / 校验提示 -->
+    <string name="toast_not_support_takeout">该菜品不支持外卖，请切换自取</string>
+    <string name="toast_added">已加入购物车</string>
+
+    <!-- 反浪费弹窗 -->
+    <string name="dialog_waste_title">反浪费小提示</string>
+    <string name="dialog_waste_msg">这一单已经点了 %1$d 份，一个人可能吃不完，是否把每道菜都改为 1 份？</string>
+    <string name="dialog_waste_confirm">改为单份</string>
+    <string name="dialog_waste_cancel">保留</string>
+
+    <!-- ============ Phase 5 确认订单页 ============ -->
+    <string name="checkout_title">确认订单</string>
+    <string name="checkout_mode_default">点餐方式</string>
+    <string name="checkout_mode_prefix">点餐方式：%1$s</string>
+    <string name="checkout_delivery_takeout">配送费 ¥%1$d · 预计 %2$d 分钟送达</string>
+    <string name="checkout_pick_time">预约取餐 %1$s</string>
+    <string name="btn_choose_time">选时间</string>
+    <string name="checkout_items_title">菜品明细</string>
+    <string name="btn_submit">提交订单</string>
+
+    <!-- ============ Phase 5 支付成功弹窗 ============ -->
+    <string name="pay_success_title">支付成功</string>
+    <string name="pay_success_msg">食堂已接单，可在「订单」页查看出餐进度</string>
+    <string name="pay_success_ok">查看订单</string>
+
+    <!-- ============ Phase 5 订单列表 / 详情 ============ -->
+    <string name="btn_view_detail">查看详情</string>
+    <string name="btn_cancel_order">取消订单</string>
+    <string name="order_detail_title">订单详情</string>
+    <string name="order_id_prefix">订单号 %1$s</string>
+    <string name="order_mode_prefix">点餐方式：%1$s</string>
+    <string name="order_time_prefix">下单时间 %1$s</string>
+    <string name="detail_pick_no_book">未预约取餐时间</string>
+    <string name="detail_pick_time">预约取餐 %1$s</string>
+    <string name="btn_next_status">模拟状态流转</string>
+
+    <!-- 时间轴三步文案 -->
+    <string name="step_label_first">待出餐</string>
+    <string name="step_label_mid">配送中</string>
+    <string name="step_label_mid_dinein">待取餐</string>
+    <string name="step_label_last">已完成</string>
+
+    <!-- 取消订单确认弹窗 -->
+    <string name="cancel_confirm_title">取消订单</string>
+    <string name="cancel_confirm_msg">确定要取消这笔订单吗？出餐后就不能取消啦</string>
+    <string name="cancel_ok">确定取消</string>
+    <string name="cancel_keep">保留</string>
+
+    <!-- Toast 提示 -->
+    <string name="toast_no_next_step">已经是最终状态啦</string>
+    <string name="toast_no_order">订单不存在或已删除</string>
+
+    <!-- ============ Phase 6 时空适配专区 ============ -->
+    <string name="zone_breakfast">早餐时光</string>
+    <string name="zone_lunch">午间快取</string>
+    <string name="zone_dinner">晚间轻食</string>
+    <string name="zone_popular">人气推荐</string>
+    <string name="home_zone_title">%1$s专区 · 附近档口</string>
+    <!-- 拿到定位后，列表按距离由近到远推荐 -->
+    <string name="home_zone_title_near">%1$s专区 · 附近档口（由近到远）</string>
+
+    <!-- ============ Phase 6 搜索 ============ -->
+    <string name="search_empty">没有找到相关档口或菜品</string>
+
+    <!-- ============ 定位：各食堂实时距离 ============ -->
+    <string name="loc_distance_m">距你 %1$d m</string>
+    <string name="loc_distance_km">距你 %1$.1f km</string>
+
+    <!-- ============ 外卖：搜索选择送达位置（高德 POI） ============ -->
+    <string name="delivery_spot_title">选择送达位置</string>
+    <string name="delivery_spot_prefix">送达位置：%1$s</string>
+    <string name="delivery_spot_empty">未选择 · 点此搜索送达位置</string>
+    <string name="delivery_spot_search_hint">输入地点名，如 八区16栋、逸夫楼、图书馆</string>
+    <string name="delivery_spot_no_result">没搜到相关地点，换个关键词试试</string>
+    <string name="delivery_spot_no_location">定位不可用，将按湘潭市范围搜索</string>
+    <string name="delivery_spot_need">请先搜索并选择送达位置</string>
+    <string name="btn_search_spot">搜索</string>
+    <string name="btn_choose_spot">选择</string>
+
+    <!-- ============ 校园地图（高德 SDK） ============ -->
+    <string name="map_title">校园地图</string>
+    <string name="map_entry">地图</string>
+    <string name="map_my_location">我的位置</string>
+    <string name="dish_detail_title">菜品详情</string>
+    <string name="dish_image_desc">菜品图片</string>
+    <string name="dish_detail_meta">%1$s · 来自 %2$s</string>
+    <string name="dish_detail_meta_plain">%1$s</string>
+    <string name="dish_detail_mode_all">支持外卖 · 支持堂食</string>
+    <string name="dish_detail_mode_takeout">仅支持外卖</string>
+    <string name="dish_detail_mode_dinein">仅支持堂食</string>
+    <string name="dish_detail_mode_none">暂不支持点餐</string>
+    <string name="dish_detail_small">分量偏少 · 建议搭配主食</string>
+    <string name="dish_detail_add">加入购物车 ¥%1$s</string>
+    <string name="dish_detail_cart_summary">购物车已有 %1$d 件 · 合计 ¥%2$s</string>
+    <string name="dish_detail_qty_minus">减少一份</string>
+    <string name="dish_detail_qty_plus">增加一份</string>
+    <string name="dish_detail_not_found">菜品不存在或已下架</string>
+
+    <string name="stall_meta">月售 %1$d · 起送 ¥%2$d · 配送 ¥%3$d</string>
+    <string name="stall_meta_free">月售 %1$d · 起送 ¥%2$d · 免配送费</string>
+    <string name="stall_eta">约 %1$d 分钟</string>
+
+    <!-- 透明厨房视频角标：未接监控时标注“演示画面” -->
+    <string name="kitchen_badge_demo">明厨亮灶 · 演示画面</string>
+    <string name="kitchen_badge_live">明厨亮灶 · 直播中</string>
+
+    <!-- ============ 登录 / 注册 ============ -->
+    <string name="auth_login_title">登录</string>
+    <string name="auth_register_title">创建账号</string>
+    <string name="auth_login_welcome">欢迎回来</string>
+    <string name="auth_login_subtitle">登录后可同步你的校园点餐记录</string>
+    <string name="auth_register_welcome">创建账号</string>
+    <string name="auth_register_subtitle">注册后即可保存你的点餐记录</string>
+    <string name="auth_username">用户名</string>
+    <string name="auth_password">密码</string>
+    <string name="auth_password_confirm">确认密码</string>
+    <string name="auth_login_btn">登录</string>
+    <string name="auth_register_btn">注册</string>
+    <string name="auth_loading_login">正在登录…</string>
+    <string name="auth_loading_register">正在注册…</string>
+    <string name="auth_go_register">还没有账号？去注册</string>
+    <string name="auth_go_login">已有账号？去登录</string>
+    <string name="auth_username_invalid">用户名需为 3-20 位字母、数字或下划线</string>
+    <string name="auth_password_invalid">密码需为 6-20 位字符（不含空格）</string>
+    <string name="auth_password_mismatch">两次输入的密码不一致</string>
+    <string name="auth_network_error">连接服务器失败，请先启动 Tomcat 或 Node 服务器</string>
+    <string name="auth_password_tip">密码会以加盐哈希保存在服务器，仅用于课程演示</string>
+    <string name="auth_login_success">登录成功</string>
+    <string name="auth_register_success">注册成功，已自动登录</string>
+    <string name="auth_logout">退出登录</string>
+    <string name="auth_logout_msg">确定要退出当前账号吗？退出后仍可浏览菜单，重新登录即可恢复。</string>
+    <string name="auth_logout_ok">退出</string>
+    <string name="auth_logout_cancel">取消</string>
+    <string name="auth_logged_out">已退出登录</string>
+    <string name="mine_login_name">点击登录 / 注册</string>
+    <string name="mine_login_signature">登录后可同步你的点餐记录</string>
+    <string name="mine_logged_signature">已登录 · 点击可退出</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============ res/layout/item_banner.xml（Banner 单页）============ -->
+<!-- 一张占位页：圆角 + 中央提示文字。后续换成本地图片并叠加"时空适配专区"。 -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_banner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="4dp"
+    android:gravity="center"
+    android:textColor="?attr/colorOnPrimary"
+    android:textSize="20sp"
+    android:textStyle="bold" />

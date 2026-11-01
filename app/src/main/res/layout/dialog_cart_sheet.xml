@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ============ res/layout/dialog_cart_sheet.xml（购物车底部面板）============
+  结构：标题行（已选菜品 + 件数） / 菜品列表（可加减、删除） / 底部合计 + 去结算。
+  背景用主题表面色，跟随明暗主题；不硬编码颜色。
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorSurface"
+    android:orientation="vertical"
+    android:paddingTop="18dp">
+
+    <!-- 标题行：左"已选菜品"，右"已选 N 件" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cart_sheet_title"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sheet_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp" />
+
+        <!-- 清空购物车：放在面板标题行右侧，二次确认后才真的清 -->
+        <TextView
+            android:id="@+id/btn_sheet_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="14dp"
+            android:gravity="center"
+            android:paddingHorizontal="4dp"
+            android:text="@string/cart_clear"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 菜品行：复用购物车商品行（菜名 / 单价 / 减-数量-加 / 删） -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cart_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- 底部：合计金额 + 去结算 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            android:id="@+id/tv_sheet_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cart_total_default"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_sheet_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_pill_primary"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:text="@string/cart_checkout"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

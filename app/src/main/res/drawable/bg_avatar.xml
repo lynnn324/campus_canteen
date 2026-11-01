@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ============ res/drawable/bg_avatar.xml（头像圆底）============ -->
+<!-- 浅主色圆形底，上面叠一个主色的"我的"图标，做离线占位头像。 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="?attr/colorPrimaryLight" />
+</shape>

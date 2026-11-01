@@ -1,0 +1,21 @@
+// ============ settings.gradle（项目级配置）============
+// 作用：声明 Dagger/AGP 等插件的下载仓库，以及本工程包含哪些模块。
+pluginManagement {
+    repositories {
+        google()            // Google 官方仓库（AndroidX 都在这）
+        mavenCentral()      // 中央仓库（基本都是官方/主流库）
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    // 禁止在每个模块里自行重复声明仓库，统一走这里，避免混乱
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+// 工程根目录名
+rootProject.name = "CampusCanteen"
+// 只包含 app 这一个应用模块
+include ':app'
